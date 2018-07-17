@@ -13,10 +13,13 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url('https://thptbaclieucfs.com/assets/font/iCielNovecentosans-DemiBold.otf');
+    src: url('http://localhost/assets/font/iCielNovecentosans-DemiBold.otf');
 
 }
 
+div.button{
+	    visibility: hidden;
+}
 
 body {
 	background-color: #F6F6F6;

@@ -1,4 +1,19 @@
 $(document).ready(function() {
+	show()
+	function show(){
+		if($('div').hasClass('card')){
+			$('div.button').css("visibility", "visible");
+		}
+	}
+	function hide(){
+		if( ($('div').hasClass('card')) == false){
+			$('div.button').css("visibility", "hidden");
+		}
+	}
+
+
+	
+
 	$("#upload").on("click", function() {
 		total = $("input:checkbox:checked").length, $(".card input:checkbox").each(function() {
 			var a, e;
@@ -11,7 +26,7 @@ $(document).ready(function() {
 					id: a,
 					mess: e
 				}
-			})), $("div#" + a + ".card").remove(), console.log(total), console.log(a)
+			})), $("div#" + a + ".card").remove(), console.log(total), console.log(a),hide()
 		}), $.ajax({
 			url: "/admin/confessions_moi/capnhat_so_cfs",
 			type: "POST",
@@ -83,4 +98,5 @@ $(document).ready(function() {
 			}
 		})
 	})
+
 });

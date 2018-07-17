@@ -63,6 +63,7 @@ class Confessions_moi extends MY_Controller {
 		$id_fb = $data['id_fb'];
 		$this->login_user->upload_stt($id_fb, $total);
 	}
+	
 }
 
 /* End of file New_cfs.php */

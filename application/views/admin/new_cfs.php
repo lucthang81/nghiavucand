@@ -24,8 +24,11 @@
               </div>
           </div>
           <?php } ?>
+          <span class='result'><p></p></span>
+          <div class='button'>
            <button type="button" id='upload' class="btn btn-primary">Đăng</button>
             <button type="button" id='delete' class="btn btn-danger">Xóa</button>
+          </div>
         </div>
 
 
